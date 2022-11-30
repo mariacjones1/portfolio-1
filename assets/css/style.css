@@ -6,6 +6,23 @@
     border: 0;
 }
 
+header {
+    background-color: #7A001B;
+    height: 75px;
+}
+
+/* Logo */
+
+#logo {
+    font-family: 'Marcellus SC', serif;
+    font-size: 300%;
+    margin: 10px;
+    float: left;
+    color: #FFF;
+}
+
+/* Main section */
+
 .main-section {
     background-image: url(../images/parchment-bg.jpg);
 }
