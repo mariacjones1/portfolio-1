@@ -11,14 +11,51 @@ header {
     height: 75px;
 }
 
-/* Logo */
+/* Logo and headings */
+
+h1 {
+    font-family: 'Marcellus SC', serif;
+}
+
+h2 {
+    font-family: 'Marcellus', serif;
+}
 
 #logo {
-    font-family: 'Marcellus SC', serif;
     font-size: 300%;
     margin: 10px;
     float: left;
     color: #F5F5DC;
+}
+
+/* Navigation menu */
+
+.menu {
+    float: right;
+    color: #F5F5DC;
+    font-family: Marcellus, serif;
+}
+
+.menu li {
+    list-style-type: none;
+    float: left;
+    margin: 35px 25px;
+}
+
+.menu a {
+    color: inherit;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.menu a:hover {
+    color: #7A001B;
+    background-color: #F5F5DC;    
+}
+
+.active {
+    border: 2px solid #F5F5DC;
 }
 
 /* Main section */
