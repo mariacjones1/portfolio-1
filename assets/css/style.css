@@ -39,7 +39,7 @@ h2 {
 .menu li {
     list-style-type: none;
     float: left;
-    margin: 35px 25px;
+    margin: 30px 25px;
 }
 
 .menu a {
@@ -62,4 +62,49 @@ h2 {
 
 .main-section {
     background-image: url(../images/parchment-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 5px;
 }
+
+/* Timeline */
+
+#timeline {
+    width: 20%;
+    margin: 5px;
+    background: rgba(159, 140, 118, 0.5);
+}
+
+#timeline > div {
+    padding: 5px;
+    font-family: Merriweather, serif;
+    font-size: 90%;
+    border-left: 3px solid black;
+}
+
+#timeline > div::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 999px;
+    background-color: #F5F5DC;
+    border: 2px solid black;
+    left: 5px;
+}
+
+#timeline h2, h3 {
+    margin-left: 15px;
+    padding-bottom: 5px;
+}
+
+#timeline p {
+    clear: both;
+    margin: auto 20px;
+}
+
+#timeline > div:hover {
+    font-size: 110%;
+    color: #7A001B;
+}
+
