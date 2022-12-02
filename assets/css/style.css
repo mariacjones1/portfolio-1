@@ -7,14 +7,14 @@
 }
 
 body {    
-    background: rgba(255, 233, 255, 0.8);
+    background: rgba(255, 233, 255);
     font-family: Merriweather, serif;
 }
 
 header {
     height: 75px;
     background-color: #eeeeee;
-    position: sticky;
+    position: fixed;
     top: 0;
     width: 100%;
     z-index: 100;
@@ -68,6 +68,12 @@ h2 {
     border: 2px solid #310151;
 }
 
+/* Main section */
+
+.main-section {
+    margin-top: 75px;
+}
+
 /* Timeline */
 
 #timeline {
@@ -75,7 +81,6 @@ h2 {
     margin: 11px;
     float: left;
     clear: left;
-    z-index: 90;
 }
 
 #timeline > div {
@@ -119,6 +124,7 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    float: right;
 }
 
 #aragon, #boleyn, #seymour, #cleves, #howard, #parr {
@@ -171,7 +177,7 @@ h2 {
     line-height: 30px;
     margin: 5%;
     padding: 5%;
-    height: 80%;
+    height: 85%;
 }
 
 .wives-text h3 {
