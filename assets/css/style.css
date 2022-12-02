@@ -14,6 +14,10 @@ body {
 header {
     height: 75px;
     background-color: #eeeeee;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 100;
 }
 
 /* Logo and headings */
@@ -36,15 +40,16 @@ h2 {
 /* Navigation menu */
 
 .menu {
-    float: right;
     color: #310151;
     font-family: Marcellus, serif;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .menu li {
     list-style-type: none;
-    float: left;
     margin: 30px 25px;
+    flex-shrink: 0;
 }
 
 .menu a {
@@ -67,9 +72,10 @@ h2 {
 
 #timeline {
     width: 15%;
-    margin: 5px;
+    margin: 11px;
     float: left;
     clear: left;
+    z-index: 90;
 }
 
 #timeline > div {
@@ -83,9 +89,9 @@ h2 {
     position: absolute;
     width: 10px;
     height: 10px;
-    border-radius: 999px;
+    border-radius: 10px;
     background-color: #FFF;
-    border: 2px solid #310151;
+    border: 3px solid #310151;
     left: 5px;
 }
 
@@ -110,64 +116,92 @@ h2 {
 .wives {
     width: 83%;
     height: 90vh;
-    float: right;
-    background-color: #310151;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
-.wives div {
-    float: left;
-    width: 33%;
-    height: 50%;
-    padding: 2px;
-    color: #FFE9FF;
+#aragon, #boleyn, #seymour, #cleves, #howard, #parr {
+    flex-basis: 33%;
+    height: 600px;
+    color: #310151;
     position: relative;
 }
 
 #aragon {
-    background: url(../images/catherine-of-aragon.jpg);
+    background: url(../images/catherine-of-aragon-desaturated.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 #boleyn {
-    background: url(../images/anne-boleyn.jpg);
+    background: url(../images/anne-boleyn-desaturated.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 #seymour {
-    background: url(../images/jane-seymour.jpg);
+    background: url(../images/jane-seymour-desaturated.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 #cleves {
-    background: url(../images/anne-of-cleves.jpg);
+    background: url(../images/anne-of-cleves-desaturated.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 #howard {
-    background: url(../images/kathryn-howard.jpeg);
+    background: url(../images/kathryn-howard-desaturated.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 #parr {
-    background: url(../images/katherine-parr.jpg);
+    background: url(../images/katherine-parr-desaturated.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .wives-text {
     overflow: hidden;
-    background: rgba(6, 2, 6, 0.7);
-    left: 5%;
-    top: 5%;
+    background: rgba(238, 238, 238, 0.8);
     position: absolute;
+    line-height: 30px;
+    margin: 5%;
+    padding: 5%;
+    height: 80%;
 }
 
 .wives-text h3 {
-    color: #FFE9FF;
+    color: #310151;
     text-align: center;
+    font-size: 120%;
+    text-transform: uppercase;
+}
+
+.wives-text strong {
+    text-transform: uppercase;
+}
+
+/* Social media links */
+
+.social {
+    position: fixed;
+    bottom: 0;
+    min-width: 750px;
+}
+
+.social li {
+    list-style-type: none;
+    text-decoration: none;
+    display: inline;
+}
+
+.social i {
+    color: #310151;
+    font-size: 200%;
+    text-align: center;
+    margin: 1%;
 }
